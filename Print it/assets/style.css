@@ -423,8 +423,3 @@ footer div {
 		flex: 2;
 	}
 }
-
-.arrow,
-.dot {
-	cursor: pointer;
-}
