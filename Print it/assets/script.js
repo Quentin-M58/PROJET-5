@@ -66,7 +66,7 @@ arrowLeft.addEventListener("click", () => {
 });
 
 //evenement
-//au click sur la fleche de gauche
+//au click sur la fleche de droite
 //si la position est superieur ou egla a nombre element
 //retourne au debut
 //sinon additionne 
