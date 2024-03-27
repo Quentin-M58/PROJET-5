@@ -61,12 +61,12 @@ arrowLeft.addEventListener("click", () => {
 		numDot = nbElement;
 	} else {
 		numDot--;
-	}
+	};
 	defilement(numDot);
 });
 
 //evenement
-//au click sur la fleche de droite
+//au click sur la fleche de gauche
 //si la position est superieur ou egla a nombre element
 //retourne au debut
 //sinon additionne 
@@ -95,10 +95,7 @@ dots.addEventListener("click", (e) => {
 function defilement(counter) {
 
 	//enleve la classe "dot_selected" de tous le monde
-	dotList[1].classList.remove("dot_selected");
-	dotList[2].classList.remove("dot_selected");
-	dotList[3].classList.remove("dot_selected");
-	dotList[0].classList.remove("dot_selected");
+	dotList.forEach(dot => dot.classList.remove("dot_selected"));
 
 	//met la classe "dot_selected" au dot selectionner
 	dotList[counter - 1].classList.add("dot_selected");
